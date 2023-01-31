@@ -1,0 +1,65 @@
+<html>
+    <script>
+
+        /*
+        //soma, subtracao, multiplicacao, divisao, resto, porcentagem
+        function calculo(operacao, num1, num2){
+            let resultado;
+            if (operacao === "soma"){
+                resultado = num1 + num2;
+            }
+                return resultado;
+            if (operacao === "subtracao"){
+                resultado = num1 - num2;
+            }
+                return resultado;
+            if (operacao === "multiplicacao"){
+                resultado = num1 * num2;
+            }
+                return resultado;
+            if (operacao === "divisao"){
+                resultado = num1 / num2;
+            }
+                return resultado;
+            if (operacao === "resto"){
+                resultado = num1 % num2;
+            }
+                return resultado;
+            if (operacao === "porcentagem"){
+                resultado = num1 * num2 / 100;
+            }
+                return resultado;
+        }
+
+            console.log("operacao");
+
+        */
+
+        function calculo(operacao, num1, num2){
+            let resultado;
+            if (operacao === "soma"){
+                resultado = num1 + num2;
+            } else if (operacao === "subtracao"){
+                resultado = num1 - num2;
+            } else if (operacao === "multiplicacao"){
+                resultado = num1 * num2;
+            } else if (operacao === "divisao"){
+                resultado = num1 / num2;
+            } else if (operacao === "resto"){
+                resultado = num1 % num2;
+            } else if (operacao === "porcentagem"){
+                resultado = num1 * num2 / 100;
+            } else {
+                console.log("operacao invalida! Tente novamente");
+            }
+            return resultado;
+        }
+        var x = calculo ("soma", 10,2);
+        console.log(x);
+        
+        /*Observação caso eu coloque a letra x entre aspas ("x"), irá 
+        imprimir a letra x e não o resultato atribuido a esta variável
+        */
+ 
+    </script>
+</html>
