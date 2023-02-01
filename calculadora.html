@@ -1,65 +1,95 @@
 <html>
-    <script>
+    <!DOCTYPE html>
+    <meta charset="utf-8">
+    <head>
+        <title>Calculadora</title>
+    </head>
 
-        /*
-        //soma, subtracao, multiplicacao, divisao, resto, porcentagem
-        function calculo(operacao, num1, num2){
-            let resultado;
-            if (operacao === "soma"){
-                resultado = num1 + num2;
-            }
-                return resultado;
-            if (operacao === "subtracao"){
-                resultado = num1 - num2;
-            }
-                return resultado;
-            if (operacao === "multiplicacao"){
-                resultado = num1 * num2;
-            }
-                return resultado;
-            if (operacao === "divisao"){
-                resultado = num1 / num2;
-            }
-                return resultado;
-            if (operacao === "resto"){
-                resultado = num1 % num2;
-            }
-                return resultado;
-            if (operacao === "porcentagem"){
-                resultado = num1 * num2 / 100;
-            }
-                return resultado;
-        }
+    <body>
+        <script>
 
-            console.log("operacao");
-
-        */
-
-        function calculo(operacao, num1, num2){
-            let resultado;
-            if (operacao === "soma"){
-                resultado = num1 + num2;
-            } else if (operacao === "subtracao"){
-                resultado = num1 - num2;
-            } else if (operacao === "multiplicacao"){
-                resultado = num1 * num2;
-            } else if (operacao === "divisao"){
-                resultado = num1 / num2;
-            } else if (operacao === "resto"){
-                resultado = num1 % num2;
-            } else if (operacao === "porcentagem"){
-                resultado = num1 * num2 / 100;
-            } else {
-                console.log("operacao invalida! Tente novamente");
+            /*
+            //soma, subtracao, multiplicacao, divisao, resto, porcentagem
+            function calculo(operacao, num1, num2){
+                let resultado;
+                if (operacao === "soma"){
+                    resultado = num1 + num2;
+                }
+                    return resultado;
+                if (operacao === "subtracao"){
+                    resultado = num1 - num2;
+                }
+                    return resultado;
+                if (operacao === "multiplicacao"){
+                    resultado = num1 * num2;
+                }
+                    return resultado;
+                if (operacao === "divisao"){
+                    resultado = num1 / num2;
+                }
+                    return resultado;
+                if (operacao === "resto"){
+                    resultado = num1 % num2;
+                }
+                    return resultado;
+                if (operacao === "porcentagem"){
+                    resultado = num1 * num2 / 100;
+                }
+                    return resultado;
             }
-            return resultado;
-        }
-        var x = calculo ("soma", 10,2);
-        console.log(x);
-        
-        /*Observação caso eu coloque a letra x entre aspas ("x"), irá 
-        imprimir a letra x e não o resultato atribuido a esta variável
-        */
- 
-    </script>
+
+                console.log("operacao");
+
+            */
+
+            function calculo(operacao, num1, num2){
+                let resultado;
+                if (operacao === "soma"){
+                    resultado = num1 + num2;
+                } else if (operacao === "subtracao"){
+                    resultado = num1 - num2;
+                } else if (operacao === "multiplicacao"){
+                    resultado = num1 * num2;
+                } else if (operacao === "divisao"){
+                    resultado = num1 / num2;
+                } else if (operacao === "resto"){
+                    resultado = num1 % num2;
+                } else if (operacao === "porcentagem"){
+                    resultado = num1 * num2 / 100;
+                } else {
+                    console.log("operacao invalida! Tente novamente");
+                }
+                return resultado;
+            }
+            
+            console.log("Resultado para a operação soma:");
+            var so = calculo ("soma", 10,2);
+            console.log(so);
+
+            console.log("Resultado para a operação subtração:");
+            var sub = calculo ("subtracao", 10,2);
+            console.log(sub);
+
+            console.log("Resultado para a operação multiplicação:");
+            var multi = calculo ("multiplicacao", 10,2);
+            console.log(multi);
+
+            console.log("Resultado para a operação divisão:");
+            var div = calculo ("divisao", 10,2);
+            console.log(div);
+
+            console.log("Resultado para a operação resto:");
+            var res = calculo ("resto", 10,2);
+            console.log(res);
+
+            console.log("Resultado para a operação porcentagem:");
+            var por = calculo ("porcentagem", 10,2);
+            console.log(por);
+
+            /*Observação caso eu coloque a letra x entre aspas ("x"), irá 
+            imprimir a letra x e não o resultato atribuido a esta variável
+            */
+    
+        </script>
+    </body>
 </html>
