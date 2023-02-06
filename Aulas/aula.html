@@ -1,0 +1,58 @@
+<html>
+    <!DOCTYPE html>
+    <meta charset="utf-8">
+    <head>
+        <title>Aula ao vivo</title>
+    </head>
+
+    <body>
+        <script>
+            //U numero primp é aquele que só é divisivel por 1 e por ele mesmo
+            //O numero 1 não e consideredo um numero primo
+            // 15
+            // 2 3
+
+            // 7
+            // 2 3 4 5 6
+
+           function verificaNumeroPrimo(numero) {
+             var resultado = true;
+
+                for (var i = 2; i < numero; i++) {
+                    console.log(i);
+
+                    if (numero % i === 0) {
+                        resultado = false;
+                        //numero não é primo
+                        break;
+                    }
+                }
+                return resultado;
+            }
+
+
+            // 1000 = 2 4 5 6 7 8 9 11  12 13 14 15  .... 999
+            function primosMenoresQueX(numero) {
+                var primos = [];
+                for (var i = 2; i < numero; i++) {
+                    if (verificaNumeroPrimo(i) ){
+                        primos.push(i);                
+               }
+            }
+                return primos;
+           }
+
+
+           //
+             function somaPrimosMenoresQueX(numero){
+                var primos = primosMenoresQueX(numero);
+                 var total = 0;
+                  for (var i = 0; i < primos.length; i++){
+                    total += primos[i];
+                  }
+             }
+
+
+        </script>
+    </body>
+</html>

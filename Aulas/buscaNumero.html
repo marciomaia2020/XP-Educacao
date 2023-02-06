@@ -1,0 +1,45 @@
+<html>
+    <!DOCTYPE html>
+    <meta charset="utf-8">
+    <head>
+        <title>Busca Números</title>
+    </head>
+
+    <body>
+        <script>
+    
+            //DADO UM VETOR-LISTA-ARRAY JA PRÉ PREENCHIDOS E SALVO  
+            //CRIAR UMA FUNÇÃO QUE IRÁ RECEBER UM NUMERO COMO PARÂMETRO
+            //E vERICICAR SE ESTE NUMERO JA EXISTE NA NOSSA LISTA
+
+            //1 RECEBER UM NUMERO COMO PARAMETRO
+            //2 EXECUTAR UM FOR NA LISTA E PARA CADA ELEMENTO VERIFICAR SE É IGUAL AO NUMERO BUSCADO
+            //3 QUANDO ENCONTRAR, INTERROMPER A EXECUÇÃO E RETORNAR TRUE
+            //4 SE CHEGAR ATÉ O FIM SEM ENCONTRAR, RETORNAR FALSO
+
+
+            var lista = [19, 54, 18, 11, 47, 98, 36, 44, 87];
+                
+            function verificaNumero(numero) {
+                var existe = false; //padrão criaando uma variável de retorno
+                for (var i = 0; i < lista.length; i++){
+                    if (lista[i] === numero) {
+                       existe = true;
+                       break;/*serve para interomper o for...quando achar o numero nescessário
+                            isso para que o for ñ percorra toda a lista evita gastar tempo pq imagina se esta lista tivesse 10 milhoes de registro?*/
+                    }
+                    console.log(i);
+                }
+                return existe;//padrão (variável de retorno) Tentar provar que ele exista e transforma em real
+            }
+
+            /* a aula foi para entender o BREAK (PADRÃO BEM USADO COM O FOR)
+            e o padrão criando uma variável indicando false e buscar o true la embaixo
+            var existe = false; //padrão criaando uma variável de retorno
+            existe = true;
+
+
+
+        </script>
+    </body>
+</html>
